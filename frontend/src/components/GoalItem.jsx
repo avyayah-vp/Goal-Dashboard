@@ -1,7 +1,6 @@
 import { useDispatch } from "react-redux";
 import { deleteGoal } from "../features/goals/goalSlice";
 import { BsFillTrash3Fill } from "react-icons/bs";
-
 function GoalItem({ goal }) {
   const dispatch = useDispatch();
 

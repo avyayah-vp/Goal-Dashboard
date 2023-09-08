@@ -20,7 +20,6 @@ function Register() {
   //destructuring form data
   const { name, email, password, password2 } = formData;
 
-
   const { user, isLoading, isError, isSuccess, message } = useSelector(
     (state) => state.auth
   );
@@ -35,7 +34,6 @@ function Register() {
     }
 
     dispatch(reset());
-
   }, [user, isError, isSuccess, message, navigate, dispatch]);
 
   //this is responsible to allow to type in the input fields
@@ -65,7 +63,7 @@ function Register() {
   if (isLoading) {
     return <Spinner />;
   }
- 
+
   return (
     <div className="background">
       <section className="heading">
